@@ -1,7 +1,7 @@
 from flask import Flask, request
 from telegram import Update, ForceReply
 from telegram.ext import Updater, CommandHandler
-
+import os
 # Replace with your Telegram bot token
 TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
 
