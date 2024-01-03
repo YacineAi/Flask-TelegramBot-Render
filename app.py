@@ -12,7 +12,7 @@ logger = logging.getLogger(__name__)
 app = Flask(__name__)
 
 # Initial bot by Telegram access token
-telegram_bot_token = "YOUR_TELEGRAM_BOT_TOKEN"
+telegram_bot_token = str(os.getenv("TELEGRAM_BOT_TOKEN"))
 bot = telegram.Bot(token=telegram_bot_token)
 
 
